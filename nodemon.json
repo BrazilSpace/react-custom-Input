@@ -1,0 +1,8 @@
+{
+  "ignore": ["src/web*"],
+  "events": {
+		"restart": "kill-port  3031",
+		"crash": "kill-port  3031"
+	 },
+   "delay": "1500"
+}
