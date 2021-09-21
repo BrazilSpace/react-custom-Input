@@ -1,0 +1,18 @@
+stages:
+  - build
+  - test
+
+dev:
+  stage: build
+  script:
+    - echo "dev build"
+    - npm init
+    - npm run deploy
+    - npm start
+
+test:
+  stage: test
+  needs:
+    - build
+  override:
+    - npm run lint

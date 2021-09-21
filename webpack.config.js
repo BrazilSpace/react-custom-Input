@@ -95,6 +95,11 @@ module.exports = () => {
         favicon: './public/favicon.ico'
       }),
     ],
+    performance: {
+      hints: false,
+      maxEntrypointSize: 512000,
+      maxAssetSize: 512000
+    },
     devServer: {
       writeToDisk: true, // 保留dist
       contentBase: dist,
