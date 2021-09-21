@@ -4,6 +4,10 @@
 
 客製化input與房間人數分配
 
+### 展示
+
+[Demo](https://brazilspace.github.io/react-custom-Input/)
+
 ### Quick Start ###
 
 ```bash
